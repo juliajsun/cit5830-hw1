@@ -4,7 +4,7 @@ from web3.middleware import ExtraDataToPOAMiddleware
 from web3.providers.rpc import HTTPProvider
 
 def connect_to_eth():
-    url = "https://eth-mainnet.g.alchemy.com/v2/b31Pvh6ZY0tQW2HV-fcGI"
+    url = "https://cloudflare-eth.com"
     w3 = Web3(HTTPProvider(url))
     assert w3.is_connected(), f"Failed to connect to provider at {url}"
     return w3
